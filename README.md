@@ -5,7 +5,7 @@ When analysing keyword data on the Google Search Console (GSC) on the webinterfa
 This limit is increased to 5000 results when using the API however even that may not suffice to analyse website with a broad spectrum of relevant keywords.
 
 This script solves that problem by iterating relevant user provided keywords with the GSC API combining multiple API answers. 
-After eliminating duplicates the script can output the collected data to a .csv or database.
+After eliminating duplicates the script can output the collected data to a .csv or a database.
 
 
 TO ADD KEYWORDS CREATE A FILE CALLED query.csv IN THE SAME DICTIONARY AND PUT ONE KEYWORD PER ROW
