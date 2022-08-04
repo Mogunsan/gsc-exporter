@@ -4,23 +4,17 @@ import requests
 import PySimpleGUI as sg
 import pandas as pd
 import csv
-import mysql.connector
 from pathlib import Path
 
 sg.theme("Topanga")
 
-#cnx = mysql.connector.connect(user='root', password='mypassword',
-#                              host='localhost',
-#                              database='gscapi',
-#                              port=3306)
-
 #GUI for Credentials
 user_input_layout = [
     [sg.Text('Enter User Parameters')],
-    [sg.Text('client_id', size=(70, 1)), sg.InputText('479146664787-h1dkbf5cqqpvr8gc3pga1r8dhvs485fs.apps.googleusercontent.com')],
-    [sg.Text('client_secret', size=(70, 1)), sg.InputText('WMILtg5p13Xwme41LUK0wBIL')],
-    [sg.Text('api_key', size=(70, 1)), sg.InputText('AIzaSyASXAWLZ6LYwGJuasZy4mukMIVPhCXfVus')],
-    [sg.Text('site_url', size=(70, 1)), sg.InputText('sc-domain:wak-online.de')],
+    [sg.Text('client_id', size=(70, 1)), sg.InputText('')],
+    [sg.Text('client_secret', size=(70, 1)), sg.InputText('')],
+    [sg.Text('api_key', size=(70, 1)), sg.InputText('')],
+    [sg.Text('site_url', size=(70, 1)), sg.InputText('')],
     [sg.Submit(), sg.Cancel()]
 ]
 window = sg.Window('GSCAPI Userinfo', user_input_layout)    
@@ -163,7 +157,7 @@ for index, row in df.iterrows():
         gsc_df.to_csv('rows'+startDate+'|'+endDate+'.csv',mode = 'a' , index = False, encoding='utf-8')
         print(index)
         print(row)
-#cnx.close()
+
 gsc_rows_df = pd.read_csv('rows'+startDate+'|'+endDate+'.csv')
 gsc_rows_df.drop_duplicates(keep = 'first', inplace = True)
 gsc_rows_df.to_csv('rows'+startDate+'|'+endDate+'.csv',mode = 'w' , index = False, encoding='utf-8')
