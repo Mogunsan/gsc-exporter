@@ -9,3 +9,9 @@ After eliminating duplicates the script can output the collected data to a .csv 
 
 
 **TO ADD KEYWORDS CREATE A FILE CALLED query.csv IN THE SAME DICTIONARY AND PUT ONE KEYWORD PER ROW**
+
+
+
+
+gsc-exporter-csv exports the .csv to the working directionary
+gsc-exporter-db needs to be connected to a mysql-db during setup
