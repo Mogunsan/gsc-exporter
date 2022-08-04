@@ -8,4 +8,4 @@ This script solves that problem by iterating relevant user provided keywords wit
 After eliminating duplicates the script can output the collected data to a .csv or a database.
 
 
-TO ADD KEYWORDS CREATE A FILE CALLED query.csv IN THE SAME DICTIONARY AND PUT ONE KEYWORD PER ROW
+**TO ADD KEYWORDS CREATE A FILE CALLED query.csv IN THE SAME DICTIONARY AND PUT ONE KEYWORD PER ROW**
