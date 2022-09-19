@@ -10,7 +10,7 @@ After eliminating duplicates the script can output the collected data to a .csv 
 
 **TO ADD KEYWORDS CREATE A FILE CALLED query.csv IN THE SAME DICTIONARY AND PUT ONE KEYWORD PER ROW**
 
-
+This way it is possible to oversee al relevant keywords without the need to buy an agency-license from the likes of SISTRIX or SpyFu
 
 
 gsc-exporter-csv exports the .csv to the working directionary
